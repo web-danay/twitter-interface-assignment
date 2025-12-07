@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ASSIGNMENT OF WEB DEVELOPMENT AND DESIGN</title>
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar" role="banner">
+  <div class="top-inner">
+    <div class="brand">
+      <div class="logo"><i class="fa-brands fa-x-twitter"></i></div>
+      <div style="font-size:16px">X</div>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Feed tabs">
+      <button class="active">For you</button>
+      <button>Following</button>
+    </div>
+
+    <div class="top-actions">
+      <div class="muted" style="padding:6px 10px;border-radius:8px">Explore</div>
+      <div style="width:2px;background:rgba(255,255,255,0.03);height:32px"></div>
+      <div class="badge">2</div>
+    </div>
+  </div>
+</header>
+
+<div class="app">
+
+  <!-- LEFT -->
+  <aside class="left" aria-label="Main navigation">
+    <nav class="left-nav" aria-hidden="false">
+      <a class="active">
+        <span class="icon">
+          <i class="fa-brands fa-x-twitter fa-lg"></i>
+        </span> <span>Home</span>
+      </a>
+      <a><span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span> <span>Explore</span></a>
+      <a><span class="icon" style="position:relative"><i class="fa-regular fa-bell"></i><span style="position:absolute;left:22px;top:-6px;background:var(--accent);color:#000;padding:2px 6px;border-radius:999px;font-size:11px">2</span></span> <span>Notifications</span></a>
+      <a><span class="icon"><i class="fa-regular fa-envelope"></i></span> <span>Messages</span></a>
+      <a><span class="icon"><i class="fa-solid fa-fire"></i></span> <span>Grok</span></a>
+      <a><span class="icon"><i class="fa-regular fa-bookmark"></i></span> <span>Bookmarks</span></a>
+      <a><span class="icon"><i class="fa-regular fa-user"></i></span> <span>Profile</span></a>
+      <a><span class="icon"><i class="fa-solid fa-ellipsis"></i></span> <span>More</span></a>
+    </nav>
+
+    <button class="post-btn">Post</button>
+
+    <div style="margin-top:18px;display:flex;align-items:center;gap:12px">
+      <div class="checkOne">D</div>
+      <div>
+        <div style="font-weight:700">Danay G</div>
+        <small class="muted">@danay07</small>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CENTER FEED -->
+  <main class="feed" role="main" aria-label="Timeline">
+
+    <!-- COMPOSER -->
+    <div class="composer-card" aria-label="Compose new post">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;gap:12px;align-items:flex-start" class="composer-top">
+          <img class="avatar" src="images/img1.jpg" alt="avatar">
+          <textarea id="composerTxt" rows="2" placeholder="What's happening?" aria-label="Tweet text"></textarea>
+        </div>
+        <button class="composer-post" id="postBtn">Post</button>
+      </div>
+
+      <div class="right" aria-label="" class="composer-tools" style="margin-top:12px">
+        <div class="icons-row" aria-hidden="true">
+          <div class="composer-icon" title="Image"><i class="fa-regular fa-image"></i></div>
+          <div class="composer-icon" title="GIF"><i class="fa-regular fa-file-image"></i></div>
+          <div class="composer-icon" title="Poll"><i class="fa-solid fa-chart-simple"></i></div>
+          <div class="composer-icon" title="Emoji"><i class="fa-regular fa-face-smile"></i></div>
+          <div class="composer-icon" title="Schedule"><i class="fa-regular fa-clock"></i></div>
+        </div>
+        <div class="muted">Everyone</div>
+      </div>
+    </div>
+
+    <!-- FEED TABS (local) -->
+    <div class="feed-tabs" role="tablist" aria-hidden="true">
+      <button class="active">For you</button>
+      <button>Following</button>
+    </div>
+
+    <!-- Tweet 2 (updated) -->
+    <article class="tweet">
+      <img class="avatar" src="images/img2.jpg" alt="">
+      <div class="body">
+        <div class="header"><div class="name">sarila</div><div class="handle muted">@nahom · 2h</div></div>
+        <p>Font Awesome is the internet's icon library and toolkit used by millions of designers.</p>
+        <div class="media"><img src="images/img3.jpg" alt=""></div>
+        <div class="meta">
+          <button class="comment"><i class="fa-regular fa-comment"></i> 42</button>
+          <button class="retweet"><i class="fa-solid fa-retweet"></i> 3</button>
+          <button class="like"><i class="fa-regular fa-heart"></i> 108</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tweet 3 (updated) -->
+    <article class="tweet">
+      <img class="avatar" src="images/img4.jpg" alt="">
+      <div class="body">
+        <div class="header"><div class="name">MSR Tube</div><div class="handle muted">@msr_tube · 6h</div></div>
+        <p>New video: Building accessible UIs with CSS Grid — tips and practical examples.</p>
+        <div class="media"><img src="images/img4.jpg" alt=""></div>
+        <div class="meta">
+          <button class="comment"><i class="fa-regular fa-comment"></i> 54</button>
+          <button class="retweet"><i class="fa-solid fa-retweet"></i> 16</button>
+          <button class="like"><i class="fa-regular fa-heart"></i> 2.5K</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tweet 5 (updated) -->
+    <article class="tweet">
+      <img class="avatar" src="images/img5.jpg" alt="">
+      <div class="body">
+        <div class="header"><div class="name">Anna Pics</div><div class="handle muted">@annapics · 3h</div></div>
+        <p>Photography is life — check out my latest gallery, now curated for mobile viewing.</p>
+        <div class="media"><img src="images/img7.jpg" alt=""></div>
+        <div class="meta">
+          <button class="comment"><i class="fa-regular fa-comment"></i> 18</button>
+          <button class="retweet"><i class="fa-solid fa-retweet"></i> 7</button>
+          <button class="like"><i class="fa-regular fa-heart"></i> 1.2K</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tweet 6 (updated) -->
+    <article class="tweet">
+      <img class="avatar" src="images/img8.jpg" alt="">
+      <div class="body">
+        <div class="header"><div class="name">Selam Code</div><div class="handle muted">@selam · 8h</div></div>
+        <p>Best practices for responsive design — fluid layouts, breakpoints, and performance tips.</p>
+        <div class="media"><img src="images/img9.jpg" alt=""></div>
+        <div class="meta">
+          <button class="comment"><i class="fa-regular fa-comment"></i> 64</button>
+          <button class="retweet"><i class="fa-solid fa-retweet"></i> 9</button>
+          <button class="like"><i class="fa-regular fa-heart"></i> 1.6K</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tweet 10 (updated) -->
+    <article class="tweet">
+      <img class="avatar" src="images/img10.jpg" alt="">
+      <div class="body">
+        <div class="header"><div class="name">BroCode Academy</div><div class="handle muted">@brocode · 1w</div></div>
+        <p>WEB DESIGN Full Course for free — watch now and level up your front-end skills.</p>
+        <div class="media"><img src="images/img11.jpg" alt=""></div>
+        <div class="meta">
+          <button class="comment"><i class="fa-regular fa-comment"></i> 3.5K</button>
+          <button class="retweet"><i class="fa-solid fa-retweet"></i> 1K</button>
+          <button class="like"><i class="fa-regular fa-heart"></i> 4K</button>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- RIGHT -->
+  <aside class="right" aria-label="Trends and follows">
+    <div class="panel">
+      <input placeholder="Search" style="width:100%;padding:10px;border-radius:999px;border:1px solid rgba(255,255,255,0.03);background:#080808;color:var(--text)">
+    </div>
+
+    <div class="panel">
+      <h3>What's happening</h3>
+      <div class="trend-item">
+        <strong>Sudan</strong>
+        <small class="muted">48.9K posts · Politics · Trending</small>
+      </div>
+      <div class="trend-item" style="margin-top:8px">
+        <strong>G20 Summit</strong>
+        <small class="muted">93.7K posts · Politics</small>
+      </div>
+      <div style="margin-top:6px">
+        <a class="muted" href="#">Show more</a>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>Who to follow</h3>
+      <div class="who-card">
+        <img src="images/icon Natoinal center.jpg" alt="">
+        <div>
+          <strong>National Center for Sci...</strong>
+          <div class="muted">@NCSE</div>
+        </div>
+        <button>Follow</button>
+      </div>
+      <div class="who-card" style="margin-top:8px">
+        <img src="images/icon sahle work.jpg" alt="">
+        <div>
+          <strong>Sahle-Work Zewde</strong>
+          <div class="muted">@sahle</div>
+        </div>
+        <button class="following">Following</button>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+</body>
+</html>
