@@ -91,6 +91,7 @@ header.topbar{
   color:var(--text);
   border-bottom:3px solid var(--accent);
   padding-bottom:8px;
+  white-space: nowrap;
 }
 
 .top-actions{
